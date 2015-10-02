@@ -1,0 +1,2 @@
+# Reversi
+C++ reversi game
