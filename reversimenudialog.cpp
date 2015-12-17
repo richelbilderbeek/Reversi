@@ -15,7 +15,6 @@
 
 #include "reversiboard.h"
 #include "reversiwidget.h"
-#include "richelbilderbeekprogram.h"
 #include "testtimer.h"
 #include "reversimaindialog.h"
 #include "testtimer.h"
@@ -99,24 +98,16 @@ ribi::Help ribi::reversi::MenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::reversi::MenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p {
-    new ProgramReversi
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::reversi::MenuDialog::GetVersion() const noexcept
 {
-  return "1.1";
+  return "2.0";
 }
 
 std::vector<std::string> ribi::reversi::MenuDialog::GetVersionHistory() const noexcept
 {
   return {
-    "2013-11-07-13: version 1.1: conformized to ProjectRichelBilderbeekConsole"
+    "2013-11-07: version 1.1: conformized to ProjectRichelBilderbeekConsole",
+    "2015-12-17: version 2.0: moved to own GitHub",
   };
 }
 
@@ -128,9 +119,11 @@ void ribi::reversi::MenuDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
+  {
+    MainDialog();
+    Widget();
+    Board();
+  }
   const TestTimer test_timer(__func__,__FILE__,1.0);
-  MainDialog();
-  Widget();
-  Board();
 }
 #endif

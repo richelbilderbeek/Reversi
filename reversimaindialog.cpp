@@ -74,8 +74,10 @@ void ribi::reversi::MainDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
+  {
+    Board();
+    Widget();
+  }
   const TestTimer test_timer(__func__,__FILE__,1.0);
-  Board();
-  Widget();
 }
 #endif

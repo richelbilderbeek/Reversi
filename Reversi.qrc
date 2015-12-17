@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/GameReversi/images">
-        <file>GameReversiIcon.png</file>
+        <file>ReversiIcon.png</file>
     </qresource>
 </RCC>
