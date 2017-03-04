@@ -19,12 +19,6 @@ struct MainDialog
 
   ///Start a Reversi game
   void Execute(const int size);
-
-  private:
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace reversi

@@ -15,16 +15,11 @@
 
 #include "reversiboard.h"
 #include "reversiwidget.h"
-#include "testtimer.h"
+
 #include "reversimaindialog.h"
-#include "testtimer.h"
-#include "trace.h"
 
 int ribi::reversi::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   const int argc = static_cast<int>(argv.size());
   if (argc > 3)
   {
@@ -78,7 +73,6 @@ ribi::About ribi::reversi::MenuDialog::GetAbout() const noexcept
     GetVersion(),
     GetVersionHistory()
   );
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
   return a;
 }
 
@@ -110,20 +104,3 @@ std::vector<std::string> ribi::reversi::MenuDialog::GetVersionHistory() const no
     "2015-12-17: version 2.0: moved to own GitHub",
   };
 }
-
-#ifndef NDEBUG
-void ribi::reversi::MenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    MainDialog();
-    Widget();
-    Board();
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

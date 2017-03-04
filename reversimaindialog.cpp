@@ -11,15 +11,13 @@
 #include "reversiwidget.h"
 #include "reversimove.h"
 #include "fileio.h"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #pragma GCC diagnostic pop
 
 ribi::reversi::MainDialog::MainDialog()
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 void ribi::reversi::MainDialog::Execute(const int size)
@@ -65,19 +63,3 @@ void ribi::reversi::MainDialog::Execute(const int size)
     w.DoMove(move);
   }
 }
-
-#ifndef NDEBUG
-void ribi::reversi::MainDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    Board();
-    Widget();
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif
