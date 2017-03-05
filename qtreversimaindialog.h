@@ -21,7 +21,7 @@ struct QtWidget;
 
 class QtReversiMainDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
 
 public:
   explicit QtReversiMainDialog(QWidget *parent = 0);

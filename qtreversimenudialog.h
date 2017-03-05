@@ -17,7 +17,7 @@ namespace reversi {
 
 class QtReversiMenuDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
     
 public:
   explicit QtReversiMenuDialog(QWidget *parent = 0) noexcept;
