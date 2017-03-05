@@ -1,13 +1,7 @@
-include(../RibiLibraries/ConsoleApplication.pri)
-
-#Libs
-include(../RibiLibraries/Boost.pri)
 include(../RibiClasses/CppAbout/CppAbout.pri)
 include(../RibiClasses/CppFileIo/CppFileIo.pri)
 include(../RibiClasses/CppHelp/CppHelp.pri)
 include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
-
-#Specific, console
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
 include(../DotMatrix/DotMatrix.pri)
 include(../RibiClasses/CppReversi/CppReversi.pri)
