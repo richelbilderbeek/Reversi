@@ -7,6 +7,7 @@ include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
 include(../DotMatrix/DotMatrix.pri)
 include(../RibiClasses/CppTextCanvas/CppTextCanvas.pri)
+include(Reversi.pri)
 include(ReversiConsole.pri)
 include(ReversiConsoleTest.pri)
 

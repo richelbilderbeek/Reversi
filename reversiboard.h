@@ -58,16 +58,12 @@ struct Board
   ///Create the delta-x and delta-y to search in the 8 directions
   static const std::vector<std::pair<int,int>> CreateDeltas() noexcept;
 
-  static Player GetOtherPlayer(const Player player) noexcept;
-
   Square PlayerToSquare(const Player player) const noexcept;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 
   friend std::ostream& operator<<(std::ostream& os, const Board& r);
 };
+
+Player GetOtherPlayer(const Player player) noexcept;
 
 bool operator==(const Board& lhs, const Board& rhs);
 bool operator!=(const Board& lhs, const Board& rhs);

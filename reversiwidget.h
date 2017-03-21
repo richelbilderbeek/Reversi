@@ -83,10 +83,6 @@ struct Widget
 
   void TogglePlayer();
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
-
   friend bool operator==(const Widget& lhs, const Widget& rhs);
 };
 

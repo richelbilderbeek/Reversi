@@ -22,10 +22,6 @@ struct Move
   static boost::shared_ptr<Move> Parse(const std::string& s) noexcept;
 
   virtual std::string ToStr() const noexcept = 0;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 struct MovePlacePiece : public Move
