@@ -43,7 +43,7 @@ script:
   # Console
   - qmake -qt=qt5 ReversiConsole.pro
   - make debug
-  - ./ReversiConsole & 
+  # - ./ReversiConsole & # Don't
   # Desktop test
   - qmake -qt=qt5 ReversiDesktop.pro
   - make debug
