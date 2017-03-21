@@ -12,7 +12,7 @@ include(Reversi.pri)
 include(../RibiClasses/CppTextCanvas/CppTextCanvas.pri)
 
 #Specific, desktop
-include(../RibiClasses/CppQtReversi/CppQtReversi.pri)
+include(QtReversi.pri)
 
 include(ReversiDesktop.pri)
 
