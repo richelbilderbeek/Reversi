@@ -1,14 +1,13 @@
-INCLUDEPATH += \
-    ../Reversi
+INCLUDEPATH += $$PWD
 
 SOURCES += \
-    ../Reversi/reversimenudialog.cpp \
-    ../Reversi/reversimaindialog.cpp
+    $$PWD/reversimenudialog.cpp \
+    $$PWD/reversimaindialog.cpp
 
 HEADERS  += \
-    ../Reversi/reversimenudialog.h \
-    ../Reversi/reversimaindialog.h
+    $$PWD/reversimenudialog.h \
+    $$PWD/reversimaindialog.h
 
 RESOURCES += \
-    ../Reversi/Reversi.qrc
+    $$PWD/Reversi.qrc
 
