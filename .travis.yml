@@ -1,7 +1,5 @@
-sudo: true
 language: cpp
 compiler: gcc
-dist: trusty
 
 # Boost
 addons: 
@@ -38,21 +36,21 @@ before_script:
 script: 
   # Console test
   - qmake -qt=qt5 ReversiConsoleTest.pro
-  - make debug
+  - make --silent debug
   - ./ReversiConsoleTest & 
   # Console
   - qmake -qt=qt5 ReversiConsole.pro
-  - make debug
+  - make --silent debug
   # - ./ReversiConsole & # Don't
   # Desktop test
   - qmake -qt=qt5 ReversiDesktop.pro
-  - make debug
+  - make --silent debug
   - ./ReversiDesktop &
   # Code coverage
   - ./get_code_cov > /dev/null
   - codecov > /dev/null
   # OCLint
-  - ./do_oclint
+  - ./do_oclint || true
 
 after_success: 
   - bash <(curl -s https://codecov.io/bash)
