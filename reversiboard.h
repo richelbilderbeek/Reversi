@@ -6,7 +6,7 @@
 
 #pragma GCC diagnostic push
 
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
+
 #include <boost/shared_ptr.hpp>
 
 #include "reversisquare.h"
