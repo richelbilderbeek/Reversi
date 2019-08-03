@@ -5,7 +5,7 @@
 #include <vector>
 
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
 #include <boost/scoped_ptr.hpp>
 
 #include "about.h"

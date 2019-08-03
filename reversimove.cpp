@@ -1,7 +1,7 @@
 #include "reversimove.h"
 
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
 #pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 #include <boost/lexical_cast.hpp>
 #pragma GCC diagnostic pop
