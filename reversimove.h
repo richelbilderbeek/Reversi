@@ -1,10 +1,10 @@
 #ifndef REVERSIMOVE_H
 #define REVERSIMOVE_H
 
-#pragma GCC diagnostic push
+
 
 #include <boost/shared_ptr.hpp>
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace reversi {

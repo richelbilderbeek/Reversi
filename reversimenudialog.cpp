@@ -6,11 +6,11 @@
 #include <sstream>
 #include <stdexcept>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/lexical_cast.hpp>
-#pragma GCC diagnostic pop
+
 
 
 #include "reversiboard.h"

@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -15,7 +15,7 @@
 #include "reversimenudialog.h"
 #include "ui_qtreversimenudialog.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::reversi::QtReversiMenuDialog::QtReversiMenuDialog(QWidget *parent) noexcept
   : QtHideAndShowDialog(parent),

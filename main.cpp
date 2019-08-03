@@ -1,8 +1,8 @@
-#pragma GCC diagnostic push
+
 
 
 #include "reversimenudialog.h"
-#pragma GCC diagnostic pop
+
 
 int main(int argc, char * argv[])
 {

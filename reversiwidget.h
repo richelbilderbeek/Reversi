@@ -4,14 +4,14 @@
 #include <string>
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/shared_ptr.hpp>
 #include "reversifwd.h"
 #include "reversiplayer.h"
 #include "reversiwinner.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 

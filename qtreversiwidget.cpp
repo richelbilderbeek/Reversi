@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -14,7 +14,7 @@
 
 #include "reversimove.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::reversi::QtWidget::QtWidget(QWidget* parent, Qt::WindowFlags f)
   : QWidget(parent,f),

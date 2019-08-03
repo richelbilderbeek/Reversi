@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include "reversimaindialog.h"
 
@@ -13,7 +13,7 @@
 #include "fileio.h"
 
 
-#pragma GCC diagnostic pop
+
 
 ribi::reversi::MainDialog::MainDialog()
 {

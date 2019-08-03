@@ -1,7 +1,7 @@
 #ifndef QTREVERSIWIDGET_H
 #define QTREVERSIWIDGET_H
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -9,7 +9,7 @@
 
 #include <QWidget>
 #include "reversifwd.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace reversi {

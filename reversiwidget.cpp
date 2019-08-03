@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <iostream>
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -13,7 +13,7 @@
 #include "reversiboard.h"
 #include "reversiplayer.h"
 #include "textcanvas.h"
-#pragma GCC diagnostic pop
+
 
 ribi::reversi::Widget::Widget(const int size)
   : m_board(new Board(size)),

@@ -1,10 +1,10 @@
 #include "reversimove.h"
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/lexical_cast.hpp>
-#pragma GCC diagnostic pop
+
 
 std::string ribi::reversi::MovePlacePiece::ToStr() const noexcept
 {

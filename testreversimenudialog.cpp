@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 #include "testreversimenudialog.h"
@@ -14,7 +14,7 @@
 #include "testreversimaindialog.h"
 #include "fileio.h"
 #include "trace.h"
-#pragma GCC diagnostic pop
+
 
 ribi::TestReversiMenuDialog::TestReversiMenuDialog()
 {

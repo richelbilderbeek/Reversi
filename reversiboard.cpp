@@ -5,13 +5,13 @@
 #include <stdexcept>
 #include <iterator>
 #include <sstream>
-#pragma GCC diagnostic push
+
 
 
 
 #include "textcanvas.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::reversi::Board::Board(const int size)
   : m_board(size,std::vector<Square>(size,Square::empty))
